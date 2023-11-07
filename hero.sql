@@ -155,3 +155,13 @@ VALUES
     (8, 8, 108),  -- Fanny has Thunder Belt
     (9, 9, 109),  -- Leomord has Blade Armor
     (10, 10, 110);  -- Chou has Feather of Heaven
+
+/*5	Create new branch named "feat/select-active-players"
+	List the player names and their corresponding hero names that are actively in
+	use during gameplay, excluding those with inactive heroes.*/
+
+    SELECT p.player_name, h.hero_name
+    FROM Player p
+    Join Hero h 
+    ON p.hero_id = h.hero_id
+    WHERE p.player_experience > 0;
