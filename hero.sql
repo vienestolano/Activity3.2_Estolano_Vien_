@@ -103,7 +103,7 @@ VALUES
 -- Insert data into the Hero table
 INSERT INTO Hero (hero_id, hero_name, class_id, is_active)
 VALUES
-    (1, 'Aldous', 101, true),
+    (1, 'Aldous', 101, false),
     (2, 'Karina', 102, true),
     (3, 'Gusion', 103, false),
     (4, 'Layla', 101, true),
